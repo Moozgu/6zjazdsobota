@@ -2,7 +2,7 @@ package Strumienie.Tasks;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Comparable {
     private int age;
     private String name;
     private String surname;
@@ -59,5 +59,10 @@ public class Person {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
